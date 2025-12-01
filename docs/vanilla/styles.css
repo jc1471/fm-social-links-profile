@@ -1,0 +1,75 @@
+:root {
+    /* Colours */
+    --Gray-700: hsl(0, 0%, 20%);
+    --Gray-800: hsl(0, 0%, 12%);
+    --Gray-900: hsl(0, 0%, 8%);
+    --White: hsl(0, 0%, 100%);
+    --Green: hsl(75, 94%, 57%);
+}
+
+/* Variable font */
+@font-face {
+    font-family: Inter;
+    src: url(/fm-social-links-profile/assets/fonts/Inter-VariableFont_slnt\,wght.ttf)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--Gray-900);
+    color: var(--White);
+    font-size: 11px;
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-container {
+    background-color: var(--Gray-800);
+    border-radius: 20px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 0px;
+}
+
+.profile-picture>img {
+    height: auto;
+    width: 90px;
+    border-radius: 100px;
+}
+
+.link {
+    border-radius: 8px;
+    background-color: var(--Gray-700);
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.location {
+    color: var(--Green);
+    font-size: 0.7rem;
+    margin-top: 0px;
+}
+
+.tagline {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.link:hover {
+    background-color: var(--Green);
+    color: var(--Gray-700);
+    cursor:pointer;
+    cursor: black;
+}
