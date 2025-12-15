@@ -1,18 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import avatar from "./assets/images/avatar-jessica.jpeg"
 import ProfileHeader from './components/ProfileHeader';
-import SocialLink from './components/SocialLink';
 import SocialMenu from './components/SocialMenu';
 
 function App() {
 
   return (
-    <>
-      <ProfileHeader />
+    <div className="profile-container">
+      <ProfileHeader avatar={avatar} name="Jessica Randall" location="London, United Kingdom" tagline="Front-end developer and avid reader" />
       <SocialMenu/>
-    </>
+    </div>
   )
 }
 
